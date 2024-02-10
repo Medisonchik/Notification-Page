@@ -1,0 +1,85 @@
+:root {
+  /* primary */
+  --color-red: hsl(1, 90%, 64%);
+  --color-blue: hsl(219, 85%, 26%);
+  /* neutral */
+  --color-white: hsl(0, 0%, 100%);
+  --color-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --color-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --color-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --color-grayish-blue: hsl(219, 14%, 63%);
+  --color-dark-grayish-blue: hsl(219, 12%, 42%);
+  --color-very-dark-blue: hsl(224, 21%, 14%);
+  --font-weight-bold: 800;
+  --font-weight-normal: 500;
+}
+
+body{
+  background-color: var(--color-very-light-grayish-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p{
+  color: var(--color-dark-grayish-blue);
+}
+
+.container{
+  background-color: var(--color-white);
+  width: 50vw;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.container header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold{
+  font-weight: var(--font-weight-bold);
+  margin-right: 0.5rem;
+}
+
+.grey{
+  color: var(--color-grayish-blue);
+}
+
+.number-notif{
+  margin-left: 1rem;
+  font-size: 1rem;
+  background-color: var(--color-blue);
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+
+}
+
+.container header span{
+  color: var(--color-grayish-blue);
+}
+
+.mark-read:hover{
+  cursor: pointer;
+  color: var(--color-blue);
+
+}
+
+
+@media (max-width: 900px) {
+  .container{
+    width: 100vw;
+    margin-top: 0;
+  }
+}
